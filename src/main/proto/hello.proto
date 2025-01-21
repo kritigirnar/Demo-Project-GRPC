@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package com.example.grpc;
+
+service HelloGrpcService {
+  rpc sayHello (HelloRequest) returns (HelloResponse);
+}
+
+message HelloRequest {
+  string clientName = 1;
+}
+
+message HelloResponse {
+  string message = 1;
+}
