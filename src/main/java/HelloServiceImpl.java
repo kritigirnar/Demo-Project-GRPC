@@ -23,7 +23,7 @@ public class HelloServiceImpl extends HelloGrpcServiceGrpc.HelloGrpcServiceImplB
     }
 
     private String callSoapService(String clientName) {
-       String soapEndpoint = "http://localhost:8080/HelloSoapService";  // Your SOAP service URL
+       String soapEndpoint = "http://localhost:8080/HelloSoapService";
         String soapRequest = createSoapRequest(clientName);
         return "Welcome " + clientName;
     }
